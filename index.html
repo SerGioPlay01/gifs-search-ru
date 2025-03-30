@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+
+  <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+
+  <meta name="description"
+    content="GIFS - ваша ежедневная порция смешных мемов, весёлых гифок с котиками и крутых видео со звуком. Тысячи пользователей регулярно публикуют сотни новых гифок и стикеров, огромная коллекция юмора на каждый день. Вы легко можете скачать гифку или стикер, поделиться ими с друзьями. Для разработчиков у нас есть API GIFS.">
+  <meta property="og:type" content="website">
+  <meta property="site_name" content="GIFS">
+  <meta property="locale" content="ru_RU">
+  <meta property="og:description"
+    content="GIFS - ваша ежедневная порция смешных мемов, весёлых гифок с котиками и крутых видео со звуком.">
+  <meta property="og:title" content="GIFS Поисковик — Веселые гифки, стикеры и короткие видео мемы">
+  <meta property="og:image" content="/resources/prrview.jpg">
+
+  <meta name="yandex-verification" content="f675728736d21732" />
+  <meta name="google-site-verification" content="PNUPp1rtd7VsHIv6hhlrBH8ZpM7l-xRwhTcsaE0Tfao" />
+  
+  <title>GIFS Поисковик — Веселые гифки, стикеры и короткие видео мемы</title>
+</head>
+
+<body>
+  <div class="loader" id="loader"></div>
+
+  <div class="app">
+    <header>
+      <h1>GIFS Поисковик</h1>
+      <p>Найдите, просмотрите и скачайте GIFs</p>
+    </header>
+
+    <form id="search-form" class="search-form">
+      <input type="text" id="search-input" placeholder="Начните печатать..." required>
+      <button type="submit">🔍 Поиск</button>
+    </form>
+
+    <h2 id="section-title">Популярные GIFs</h2>
+    <div id="gif-container" class="gif-container"></div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <span class="close-button">&times;</span>
+    <div class="modal-content">
+      <img id="modal-gif" src="" alt="GIF">
+      <a id="download-link" href="" download>Скачать GIF</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <!-- Yandex -->
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date();
+      for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(99425095, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/99425095" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+</body>
+
+</html>
